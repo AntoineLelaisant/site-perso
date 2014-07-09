@@ -1,0 +1,7 @@
+parameters:
+#    open_ball_site.example.class: OpenBall\Bundle\SiteBundle\Example
+
+services:
+#    open_ball_site.example:
+#        class: %open_ball_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

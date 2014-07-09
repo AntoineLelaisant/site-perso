@@ -1,0 +1,4 @@
+open_ball_site:
+    resource: "@OpenBallSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

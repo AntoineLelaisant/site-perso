@@ -1,0 +1,34 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    {% include("OpenBallSiteBundle:Site:menu.html.twig") %}
+
+    <header id="home" class="full-height">
+
+        <img id="portrait-header" src="{{ asset('assets/images/portrait_header.png')}}" alt="">
+
+        <div class="container">
+            <div class="heading">
+                <h1>
+                    Antoine <br>
+                    <hr size="5">
+                    Lelaisant
+                </h1>
+                <h2>Développeur & Chef de projet web</h2>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="full-height">
+
+    </section>
+{% endblock body %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts
+        "assets/js/home.js"
+    %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock javascripts %}
