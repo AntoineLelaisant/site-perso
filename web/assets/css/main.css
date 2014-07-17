@@ -1,90 +1,13 @@
-@font-face {
-    font-family: "Bebas Neue";
-    src: url('../fonts/BebasNeue.otf');
-}
-
-/* Globals */
-body {
-    font-family: "Open Sans", Helvetica, Arial, Sans-serif;
-    background-color: #CCC;
-    color: #FFF;
-}
-
-#main-menu {
-    margin: 25px 160px 0 0;
-}
-
-#main-menu li a {
-    text-transform: uppercase;
+.cd-timeline-content h5 {
+    color: #303e49;
     font-weight: 600;
-    color: #FFF;
-    padding: 5px 15px;
-    border: 1px solid transparent;
 }
 
-#main-menu li.active a,
-#main-menu li:hover a {
-    border-radius: 0;
+.cd-timeline-content .keywords {
+    font-weight: 300;
 }
 
-#main-menu li.active a {
-    background-color: #c69b6e;
-    border-color: #FFF;
-    color: #FFF;
-}
-
-#main-menu li:hover a {
-    color: #000;
-}
-
-#portrait-header {
-    width: 40%;
-    position: absolute;
-    bottom: 0;
-}
-
-#home .container {
-    background-color: rgba(198, 155, 110, 0.85);;
-    position: absolute;
-    opacity: 0.85;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.heading {
-    display: block;
-    position: absolute;
-    bottom: 220px;
-    left: calc(50% - 12em);
-    width: 24em;
-    margin: auto;
-    text-align: center;
-}
-
-.heading h1 {
-    text-transform: uppercase;
-    font-family: "Bebas Neue", "Open Sans", Helvetica, Arial, Sans-serif;
-    font-weight: 800;
-    font-size: 7em;
-    letter-spacing:1px
-}
-
-.heading h1 hr {
-    width: 20%;
-    border: none;
-    height: 2px;
-    color: #FFF;
-    background-color: #FFF;
-    margin: 0 auto 3px;
-}
-
-.heading h2 {
-    font-family: "Open Sans", Helvetica, Arial, Sans-serif;
-    font-size: 14px;
-}
-
-#about {
-    background-color: #31302f;
+.cd-timeline-content .keywords strong {
+    font-weight: 600;
+    color: #303e49;
 }

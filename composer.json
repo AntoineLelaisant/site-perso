@@ -20,7 +20,7 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "twbs/bootstrap": "3.2.*@dev",
-        "components/jquery": "1.11.*@dev"
+        "open-ball/jquery-smooth-scroller": "1.0"
     },
     "scripts": {
         "post-install-cmd": [
@@ -51,5 +51,19 @@
         "branch-alias": {
             "dev-master": "2.3-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "open-ball/jquery-smooth-scroller",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/open-ball/jquery-smooth-scroller.git",
+                    "type": "git",
+                    "reference": "v1.0"
+                }
+            }
+        }
+    ]
 }

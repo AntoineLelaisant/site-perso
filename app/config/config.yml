@@ -51,6 +51,10 @@ assetic:
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css"
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap-theme.css"
             filters: [cssembed,cssrewrite]
+        smooth_scroller_js:
+            inputs:
+                - "%kernel.root_dir%/../vendor/open-ball/jquery-smooth-scroller/src/smooth-scroller.js"
+            filters: [yui_js]
 
 
 

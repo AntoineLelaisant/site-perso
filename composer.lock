@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4270d95ffe72d76d0a48c2c02be44566",
+    "hash": "e34fa8e4312dd102e11f48ff17ceedde",
     "packages": [
         {
             "name": "components/jquery",
@@ -909,6 +909,16 @@
             "time": "2014-06-04 16:30:04"
         },
         {
+            "name": "open-ball/jquery-smooth-scroller",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-ball/jquery-smooth-scroller.git",
+                "reference": "v1.0"
+            },
+            "type": "library"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1535,12 +1545,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "ddee04038f946ac103eb4e70c8eb7adeb2cf563b"
+                "reference": "c3ae289f4a9e5fc14e489e3914d150954469f1ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/ddee04038f946ac103eb4e70c8eb7adeb2cf563b",
-                "reference": "ddee04038f946ac103eb4e70c8eb7adeb2cf563b",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/c3ae289f4a9e5fc14e489e3914d150954469f1ac",
+                "reference": "c3ae289f4a9e5fc14e489e3914d150954469f1ac",
                 "shasum": ""
             },
             "replace": {
@@ -1578,7 +1588,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-07-08 03:44:43"
+            "time": "2014-07-10 23:58:18"
         },
         {
             "name": "twig/extensions",

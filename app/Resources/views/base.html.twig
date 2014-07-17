@@ -8,8 +8,8 @@
             <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
 
             {% stylesheets combine=true
-                "assets/css/normalize.css"
-                "@bootstrap_css"
+                "assets/css/reset.css"
+                "assets/css/timeline.css"
                 "assets/css/main.css"
              %}
                 <link rel="stylesheet" href="{{ asset_url }}">
@@ -25,7 +25,8 @@
         {% block javascripts %}
             {% javascripts filter='?yui_js' combine=true
                 "@jquery_js"
-                "@bootstrap_js"
+                "assets/js/modernizr.js"
+                "assets/js/timeline.js"
             %}
                 <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
