@@ -2,14 +2,17 @@
 
 {% block body %}
 
-    {% include("OpenBallSiteBundle:Fragments:header.html.twig") %}
+    {% include("OpenBallSiteBundle:Fragments:menu.html.twig") %}
 
-    {# include("OpenBallSiteBundle:Fragments:menu.html.twig") #}
+    {% include("OpenBallSiteBundle:Fragments:header.html.twig") %}
 
     {% include("OpenBallSiteBundle:Fragments:timeline.html.twig") %}
 
     {% include("OpenBallSiteBundle:Fragments:skills.html.twig") %}
 
+    {% include("OpenBallSiteBundle:Fragments:contact.html.twig") %}
+
+    {% include("OpenBallSiteBundle:Fragments:footer.html.twig") %}
 
 {% endblock body %}
 
@@ -18,6 +21,7 @@
     {% javascripts combine=true
         "assets/js/jquery.dropdown.js"
         "@OpenBallSiteBundle/Resources/public/js/home.js"
+        "assets/js/skills.js"
      %}
        <script src="{{ asset_url }}"></script>
     {% endjavascripts %}

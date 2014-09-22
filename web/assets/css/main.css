@@ -21,22 +21,12 @@ header.header h1 {
     padding-top: 30px;
 }
 
-section.skills header.skills-header {
-    background: url(/assets/images/keyboard.png) no-repeat;
+footer {
     background-color: #303e49;
-    background-attachment:fixed;
-    background-position: center;
-    -webkit-background-size: cover; /* pour Chrome et Safari */
-    -moz-background-size: cover; /* pour Firefox */
-    -o-background-size: cover; /* pour Opera */
-    background-size: cover; /* version standardisée */
-    height: 300px;
-    line-height: 300px;
+    text-align: center;
     color: #fff;
-    font-family: 'Open Sans' sans-serif;
-    font-size: 2em;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .cd-timeline-content h5 {
