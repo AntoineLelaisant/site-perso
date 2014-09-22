@@ -4,10 +4,22 @@
 
     {% include("OpenBallSiteBundle:Fragments:header.html.twig") %}
 
-    {% include("OpenBallSiteBundle:Fragments:menu.html.twig") %}
+    {# include("OpenBallSiteBundle:Fragments:menu.html.twig") #}
 
     {% include("OpenBallSiteBundle:Fragments:timeline.html.twig") %}
 
+    {% include("OpenBallSiteBundle:Fragments:skills.html.twig") %}
+
 
 {% endblock body %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts combine=true
+        "assets/js/jquery.dropdown.js"
+        "@OpenBallSiteBundle/Resources/public/js/home.js"
+     %}
+       <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock javascripts %}
 

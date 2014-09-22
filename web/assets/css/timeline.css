@@ -34,23 +34,17 @@ h1, h2 {
 }
 header {
     background: none repeat scroll 0 0 #303e49;
-    height: 200px;
     text-align: center;
 }
 header h1 {
     color: white;
     font-size: 1.125rem;
-    padding-top: 80px;
-    padding-bottom: 8px;
 }
 @media only screen and (min-width: 1170px) {
-header {
-    height: 300px;
-}
-header h1 {
-    font-size: 1.5rem;
-    padding-top: 120px;
-}
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
 #cd-timeline {
     margin-bottom: 2em;
