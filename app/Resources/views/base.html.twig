@@ -28,8 +28,10 @@
         {% block body %}{% endblock %}
 
         {% block javascripts %}
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
             {% javascripts filter='?yui_js' combine=true
-                "@jquery_js"
                 "assets/js/modernizr.js"
                 "assets/js/menu.js"
                 "assets/js/jquery-smooth-scroller.min.js"
