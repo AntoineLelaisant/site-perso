@@ -1,0 +1,76 @@
+header.skills-header {
+    background: url(/assets/images/keyboard.png) no-repeat;
+    background-color: #303e49;
+    background-attachment:fixed;
+    background-position: center;
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    height: 300px;
+    line-height: 300px;
+    color: #fff;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 150px;
+}
+
+header.skills-header h2 {
+    font-size: 1.125em
+}
+@media only screen and (min-width: 1170px) {
+    header.skills-header h2  {
+        font-size: 1.5em;
+    }
+}
+
+.skills {
+    padding-bottom: 150px;
+}
+
+.skill-item {
+    margin-bottom: 35px;
+}
+
+.skill-item-title {
+    color: #303e49;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 2em;
+    text-align: right;
+}
+
+.dot-on {
+    background: url(/assets/images/icons/dot-on.png) no-repeat;
+}
+
+.dot-off {
+    background: url(/assets/images/icons/dot-off.png) no-repeat;
+}
+
+.dot-off,
+.dot-on {
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+
+    -webkit-background-size: contain; /* pour Chrome et Safari */
+    -moz-background-size: contain; /* pour Firefox */
+    -o-background-size: contain; /* pour Opera */
+    background-size: contain; /* version standardisée */
+}
+@media only screen and (max-width: 1200px) {
+    .dot-on,
+    .dot-off {
+        width: 20px;
+        height: 20px
+    }
+
+    .skill-item-title {
+        font-size: 1.5em;
+        line-height: 20px;
+    }
+}

@@ -5,11 +5,16 @@
         <title>{% block title %}Antoine Lelaisant{% endblock %}</title>
 
         {% block stylesheets %}
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+            <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
             {% stylesheets combine=true
+                "@bootstrap_css"
                 "assets/css/reset.css"
+                "assets/css/menu.css"
                 "assets/css/timeline.css"
+                "assets/css/skills.css"
+                "assets/css/contact.css"
                 "assets/css/main.css"
              %}
                 <link rel="stylesheet" href="{{ asset_url }}">
@@ -26,6 +31,8 @@
             {% javascripts filter='?yui_js' combine=true
                 "@jquery_js"
                 "assets/js/modernizr.js"
+                "assets/js/menu.js"
+                "assets/js/jquery-smooth-scroller.min.js"
                 "assets/js/timeline.js"
             %}
                 <script src="{{ asset_url }}"></script>
