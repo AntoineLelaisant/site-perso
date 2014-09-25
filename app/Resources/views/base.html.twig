@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
+
+        <meta name="description" content="Antoine Lelaisant - Développeur web et chef de projet.
+        Étudiant en Master DNR2i à l'Université de Caen Basse-Normandie" />
+
+        <meta property="og:title" content="Antoine Lelaisant" />
+        <meta property="og:url" content="http://alelaisant.fr/" />
+        <meta property="og:type" content="image/png" />
+        <meta property="og:image" content="http://alelaisant.fr/assets/images/portrait-round.png" />
+
         <title>{% block title %}Antoine Lelaisant{% endblock %}</title>
 
         {% block stylesheets %}
-            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
-            <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
             {% stylesheets combine=true
                 "@bootstrap_css"
@@ -40,6 +48,7 @@
             %}
                 <script src="{{ asset_url }}"></script>
             {% endjavascripts %}
+            <noscript>Pour que la page s'affiche correctement, vous devez activer javascript</noscript>
         {% endblock %}
     </body>
 </html>
