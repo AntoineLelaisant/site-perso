@@ -30,41 +30,8 @@ section.contact h2 {
     text-decoration: underline;
 }
 
-.address {
-    background: url(/assets/images/icons/map-marker.png) no-repeat;
-}
-
-.phone {
-    background: url(/assets/images/icons/phone.png) no-repeat;
-}
-
-.email {
-    background: url(/assets/images/icons/mail.png) no-repeat;
-}
-
-.github {
-    background: url(/assets/images/icons/github.png) no-repeat;
-}
-
-.twitter {
-    background: url(/assets/images/icons/twitter.png) no-repeat;
-}
-
-.linkedin {
-    background: url(/assets/images/icons/linkedin.png) no-repeat;
-}
-
-.phone,
-.address,
-.email,
-.twitter,
-.linkedin,
-.github {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    -webkit-background-size: contain; /* pour Chrome et Safari */
-    -moz-background-size: contain; /* pour Firefox */
-    -o-background-size: contain; /* pour Opera */
-    background-size: contain; /* version standardisée */
+.contact [class^="icon-"]:before, [class*=" icon-"]:before,
+.contact [class^="icon-"]:after, [class*=" icon-"]:after {
+    font-size: 2em;
+    margin-left: 0;
 }

@@ -38,6 +38,8 @@ assetic:
             jar: %kernel.root_dir%/Resources/java/cssembed-0.4.5.jar
         yui_js:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
+        yui_css:
+            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.8.jar
     assets:
         bootstrap_js:
             inputs:
@@ -47,7 +49,7 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap.css"
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/bootstrap-theme.css"
-            filters: [cssembed,cssrewrite]
+            filters: [?yui_css,cssembed,cssrewrite]
         smooth_scroller_js:
             inputs:
                 - "%kernel.root_dir%/../vendor/open-ball/jquery-smooth-scroller/src/smooth-scroller.js"
